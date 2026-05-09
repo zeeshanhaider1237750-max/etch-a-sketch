@@ -5,9 +5,9 @@ for (let i = 0; i < 256; i++) {
      const square = document.createElement('div');
      square.classList.add('square');
      container.appendChild(square);
-    //  square.addEventListener('mouseenter', () => {
-    //     square.style.backgroundColor = 'black';
-    //  })
+     square.addEventListener('mouseenter', () => {
+        square.style.backgroundColor = 'black';
+     })
 }
 let newGrid;
 const numberbtn = document.querySelector('#btn');
@@ -21,6 +21,9 @@ if (newGrid >0 && newGrid <= 100){
         const square = document.createElement('div');
         square.classList.add('square');
         container.appendChild(square);
+        square.addEventListener('mouseenter', () => {
+            square.style.backgroundColor = 'black';
+        })
     }
 }
 })
