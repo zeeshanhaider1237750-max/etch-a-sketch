@@ -1,0 +1,13 @@
+#container{
+    display: grid;
+    margin: 20px auto;
+    width: 80vh;
+    height: 80vh;
+    border: 2px solid black;
+    grid-template-columns: repeat(var(--grid-size, 16), 1fr); 
+    grid-template-rows: repeat(var(--grid-size, 16), 1fr);
+}
+.square{
+    border: 1px solid black;
+    box-sizing: border-box;
+}
